@@ -1,0 +1,12 @@
+<div id="bottomthing" class=" container footer" style="background-color: steelblue; padding-bottom:5px; margin-top:30px; padding-top:10px; z-index: 100;">
+	<div class="one_half" style="margin-left:30px; margin-right:-30px; margin-bottom:0px; padding-top:6px;"> <p style="color:white;">© Work Skills 2014   ▪   <a style="color:white;" href="/privacy.html">Privacy Policy</a>   ▪   <a style="color:white;" href="/terms.html">Terms and Conditions</a></p></div>
+    <div class="one_half last" style="margin-bottom:0px;">
+<span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+<span class='st_email_large' displayText='Email'></span>
+<span class='st_linkedin_large' displayText='LinkedIn'></span>
+<span class='st_sharethis_large' displayText='ShareThis'></span>
+</div>
+	</div>
+ </div>
+ </div>	

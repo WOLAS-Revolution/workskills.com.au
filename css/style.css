@@ -1647,12 +1647,12 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	width: 200px;
 	max-width: 100%;
 	display: block;
-	margin-bottom: 20px;
+	/*margin-bottom: 20px; */
 	width: 180px;
 	color: #999;
-	-moz-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px;
-	-webkit-box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px;
-	box-shadow: #ececec 0px 1px 4px inset, #f8f8f8 -5px -5px 0px 0px, #f8f8f8 5px 5px 0px 0px, #f8f8f8 5px 0px 0px 0px, #f8f8f8 0px 5px 0px 0px, #f8f8f8 5px -5px 0px 0px, #f8f8f8 -5px 5px 0px 0px;
+	-moz-box-shadow: #ececec 0px 1px 4px inset, #FFF -5px -5px 0px 0px, #FFF 5px 5px 0px 0px, #FFF 5px 0px 0px 0px, #FFF 0px 5px 0px 0px, #FFF 5px -5px 0px 0px, #FFF -5px 5px 0px 0px;
+	-webkit-box-shadow: #ececec 0px 1px 4px inset, #FFF -5px -5px 0px 0px, #FFF 5px 5px 0px 0px, #FFF 5px 0px 0px 0px, #FFF 0px 5px 0px 0px, #FFF 5px -5px 0px 0px, #FFF -5px 5px 0px 0px;
+	box-shadow: #ececec 0px 1px 4px inset, #FFF -5px -5px 0px 0px, #FFF 5px 5px 0px 0px, #FFF 5px 0px 0px 0px, #FFF 0px 5px 0px 0px, #FFF 5px -5px 0px 0px, #FFF -5px 5px 0px 0px;
 	border: 1px solid #e8e8e8
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
