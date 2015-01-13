@@ -1,5 +1,5 @@
 <?php
-define('TO_EMAIL', '"YOURNAME" <snicholas@wolas.com.au>');
+define('TO_EMAIL', '"YOURNAME" <rocknrolladesigns@gmail.com>');
 
 class Mailer{
 	
