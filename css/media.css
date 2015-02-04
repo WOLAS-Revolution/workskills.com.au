@@ -148,7 +148,7 @@ and (orientation : portrait) {
 		margin-left: -15px;
 	}
 	.team-member{
-		width:100%;
+		width:48%;
 		float:none;
 		margin-bottom:40px;
 	}
@@ -269,6 +269,9 @@ and (orientation : portrait) {
 }
  
 @media only screen and (max-width: 479px) {
+	.team-member{
+		width: 100%;
+	}
 	#directory, #footbox hr{
 		display: none;
 	}

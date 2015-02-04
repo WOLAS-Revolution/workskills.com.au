@@ -610,7 +610,7 @@ nav.light .main-menu li.active a, nav.dark .main-menu li.active a {
 	display: none;
 }
 .cptop, .cpbtm{
-	width: 320px !important;
+	width: 320px;
 	position: absolute;
 	margin-left: 10%;
 }
