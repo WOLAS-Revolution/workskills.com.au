@@ -2,9 +2,6 @@
 /*--------------------------------------------------------
 Resets
 --------------------------------------------------------*/
-* {
-  box-sizing: border-box;
-}
 html, body {
 	visibility: visible !important;
 }
@@ -125,6 +122,7 @@ BLUEBARS
 .bluecont{
 	width: 960px;
 	margin: 0 auto;
+	text-align: center;
 }
 .bluebtn, .bluehome{
 	vertical-align: middle;
@@ -425,6 +423,40 @@ p.footnote{
 .unitsofcompetency img{
 	width: 10px;
 }
+.abcontainer{
+	width: 100%;
+	padding: 2%;
+	margin: 10px 0;
+	overflow: auto;
+	border-bottom: 2px dotted steelblue;
+}
+.abcontainer:nth-child(odd){
+	background-color: #f0f5f9;
+}
+.abcontainer:nth-child(even){
+	background-color: #f4f4f4;
+}
+.abcontainer img{
+	width: 25% !important;
+}
+.abcontainer:nth-child(odd) img{
+	float: left;
+	margin-right: 2%;
+}
+.abcontainer:nth-child(even) img{
+	float: right;
+	margin-left: 2%;
+}
+.abdesc{
+	display: block;
+	width: 70%;
+}
+.abcontainer:nth-child(odd) .abdesc{
+	float: right;
+}
+.abcontainer:nth-child(even) .abdesc{
+	float: left;
+}
 
 /*--------------------------------------------------------
 /* MENU STYLING
@@ -577,7 +609,31 @@ nav.light .main-menu li.active a, nav.dark .main-menu li.active a {
 .selectnav {
 	display: none;
 }
-
+.cptop, .cpbtm{
+	width: 320px !important;
+	position: absolute;
+	margin-left: 10%;
+}
+.cptop{
+	top: 0;
+}
+.cpbtm{
+	bottom: 0;
+}
+.slider{
+	width: 100%;
+}
+.bx-viewport{
+	height: auto !important;
+}
+.bx-pager.bx-default-pager{
+	width: 68px !important;
+	margin: 0 auto !important;
+}
+.bx-pager-item{
+	display: inline-block !important;
+	padding: 5px !important;
+}
 /*-----------------------------------------------------------------------------------*/
 /*	HOME 1 STYLING
 /*-----------------------------------------------------------------------------------*/

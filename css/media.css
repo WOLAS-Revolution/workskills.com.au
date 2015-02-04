@@ -171,6 +171,13 @@ and (orientation : portrait) {
 		margin:1%;
 		float:left;
 	}
+	.cptop, .cpbtm{
+		position: inherit !important;
+		margin: 0 auto !important;
+	}
+	.bx-viewport{
+		background-color: #303030;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -202,6 +209,7 @@ and (orientation : portrait) {
 	}
 	#mobmenu:hover, #mobwolas:hover{
 		background-color: #74a3c9;
+		cursor: pointer;
 	}
 	#mobwolas p{
 		color: white;
@@ -220,7 +228,6 @@ and (orientation : portrait) {
 		margin: 5px 5px 0 0 !important;
 	}
 	#mobnavc{
-		display: none;
 		background-color: #518bbb;
 	}
 	#mobnavc ul{
@@ -253,7 +260,7 @@ and (orientation : portrait) {
 	#mobnavc hr{
 		margin: 10px 0;
 	}
-	#nav, #qlnav, #qcnav{
+	#nav, #qlnav, #qcnav, #abnav{
 		display: none;
 	}
 	.light .container{
@@ -342,5 +349,8 @@ and (orientation : portrait) {
 	#closeProject {
 		top: 10px;
 		right:-40px;
+	}
+	.cptop, .cpbtm{
+		width: 420px !important;
 	}
 }

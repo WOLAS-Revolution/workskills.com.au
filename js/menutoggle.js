@@ -1,6 +1,4 @@
-$( document ).ready(function() {
-    $( "#mobmenu" ).click(function() {
-        $( "#mobnavc" ).slideToggle( "slow", function() {
-        });
+$( "#mobmenu" ).on( "click", function() {
+    $( "#mobnavc" ).on( "slideToggle", "slow", function() {
     });
 });
