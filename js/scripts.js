@@ -766,33 +766,6 @@ $(window).load(function(){
     var $spy = $(this).scrollspy('refresh');
 	
   }); 	
- 
-/* ------------------------------------------------------------------------ */
-/* FLEX SLIDER */
-/* ------------------------------------------------------------------------ */    
-
-	 if ( $.browser.safari ) {
-		  $('.flexslider').flexslider({						
-			animation: "slide",
-			direction: "horizontal", 
-			slideshow: false,
-			slideshowSpeed: 3500,
-			animationDuration: 500,
-			directionNav: true,
-			controlNav: false,						
-			useCSS: false
-		  });
-	 }
-	$('.flexslider').flexslider({						
-			animation: "slide",
-			direction: "horizontal", 
-			slideshow: false,
-			slideshowSpeed: 3500,
-			animationDuration: 500,
-			directionNav: true,
-			controlNav: false
-				
-	 });
 	 
 /* ------------------------------------------------------------------------ */
 /* Skillbar */
@@ -850,22 +823,6 @@ $(window).load(function(){
  
 });
 // END OF WINDOW.LOAD FUNCTION
-	
-  
- $('#home-slider.flexslider').flexslider({						
-		animation: "swing",
-		direction: "vertical", 
-		slideshow: true,
-		slideshowSpeed: 3500,
-		animationDuration: 1000,
-		directionNav: false,
-		controlNav: true,
-		smootheHeight:true,
-		after: function(slider) {
-		  slider.removeClass('loading');
-		}
-			
- });
  
 
  

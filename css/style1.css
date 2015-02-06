@@ -594,9 +594,11 @@ nav .container .twelve.columns {
 	z-index: 100 !important;
 	top: -1px !important;
 	width: inherit;
+	pointer-events: none;
 }
 #nav ul{
 	float: right;
+	pointer-events: all;
 }
 #nav2{
 	margin-top: -42px;
