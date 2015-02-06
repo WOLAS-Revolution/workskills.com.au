@@ -50,9 +50,9 @@
 		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 		<script type="text/javascript">stLight.options({publisher: "15b7ccba-21ec-4960-926c-129e8b6f3fd4", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 		<script type="text/javascript">
-			$( "#mobmenu" ).click(function() {
-				$( "#mobnavc" ).slideToggle("slow", function() {
+				$('body').on('click','#mobmenu',function(){
+					$( "#mobnavc" ).slideToggle("slow", function() {
+					});
 				});
-			});
 		</script>
 </head>

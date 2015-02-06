@@ -18,6 +18,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
 	line-height: 1.5;
+	width: 100% !important;
 }
 footer, #footer{
 	position: absolute;
@@ -423,27 +424,36 @@ p.footnote{
 .unitsofcompetency img{
 	width: 10px;
 }
-.abcontainer{
+.abcontainer, .tscontainer{
 	width: 100%;
-	padding: 2%;
+	padding: 2% 4%;
 	margin: 10px 0;
 	overflow: auto;
 	border-bottom: 2px dotted steelblue;
 }
-.abcontainer:nth-child(odd){
-	background-color: #f0f5f9;
+.abcontainer:nth-child(odd), .tscontainer:nth-child(odd){
+	background-color: #f2f4f7;
 }
-.abcontainer:nth-child(even){
+.abcontainer:nth-child(even), .tscontainer:nth-child(even){
 	background-color: #f4f4f4;
 }
-.abcontainer img{
-	width: 25% !important;
+.abimg{
+	width: 25%;
+	height: 30vw;
+	max-height: 320px;
+	overflow: hidden;
 }
-.abcontainer:nth-child(odd) img{
+.abimg img{
+	width: auto;
+	height: 100%;
+	max-width: 500% !important;
+	margin-left: -20%;
+}
+.abcontainer:nth-child(odd) .abimg{
 	float: left;
 	margin-right: 2%;
 }
-.abcontainer:nth-child(even) img{
+.abcontainer:nth-child(even) .abimg{
 	float: right;
 	margin-left: 2%;
 }
@@ -456,6 +466,46 @@ p.footnote{
 }
 .abcontainer:nth-child(even) .abdesc{
 	float: left;
+}
+.tsunit p{
+	color: #808080;
+	font-style: italic;
+	text-align: right;
+	font-family: "Oswald", sans-serif;
+	font-size: 140%;
+}
+.testimonial:before{
+	color: #ccc;
+	content: "\201C";
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+	font-family: "BebasNeueRegular", sans-serif;
+}
+.tscontainer .testimonial p{
+	font-size: 120%;
+}
+.testimonial p{
+	display: inline;
+}
+.tsattr{
+	text-transform: uppercase;
+	text-align: right;
+	color: steelblue;
+	font-size: 110%;
+	padding-left: 20px;
+}
+#tscon{
+	padding-left: 10px;
+}
+#tscon p{
+	font-size: 90%;
+}
+#tscon .tsattr{
+	float: left;
+	padding-left: 10px !important;
+	font-size: 100%;
 }
 
 /*--------------------------------------------------------
@@ -625,6 +675,13 @@ nav.light .main-menu li.active a, nav.dark .main-menu li.active a {
 }
 .bx-viewport{
 	height: auto !important;
+	width: 100vw !important;
+}
+.bxslider li{
+	width: 100vw !important;
+}
+.bx-pager{
+	display: none;
 }
 .bx-pager.bx-default-pager{
 	width: 68px !important;
@@ -634,6 +691,29 @@ nav.light .main-menu li.active a, nav.dark .main-menu li.active a {
 	display: inline-block !important;
 	padding: 5px !important;
 }
+.bx-controls-direction{
+	width: 100%;
+	position: absolute;
+	margin-top: -23%;
+	padding: 0 2%;
+}
+.bx-next{
+	float: right;
+	height: 40px;
+	width: 40px;
+	font-size: 0 !important;
+	background-image: url("/images/arrow_right.png");
+	overflow: auto;
+}
+.bx-prev{
+	float: left;
+	height: 40px;
+	width: 40px;
+	font-size: 0 !important;
+	background-image: url("/images/arrow_left.png");
+	overflow: auto;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME 1 STYLING
 /*-----------------------------------------------------------------------------------*/
