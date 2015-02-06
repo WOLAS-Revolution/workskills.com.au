@@ -22,6 +22,15 @@
 				});
 			});
 		</script>
+		<script type="text/javascript">
+			$('#button1').click(function() {
+				var url = "http:www.your-url.com?ID=" + Math.random(); //create random number
+				setTimeout(function() {
+				 $("#elementName").load(url+" #elementName>*","");
+				}, 1000); //wait one second to run function
+			 
+			 });
+		</script>
 </head>
 
 <body style="visibility: hidden">
@@ -29,25 +38,25 @@
 	<div class="page-wrap">
 		<div class="slider">
 			<ul class="bxslider">
-				<li style="width: 100%">
+				<li>
 					<a href="/hospitality.html"><img src="/images/hospbg.jpg" /></a>
 					<div class="cptop">
 						<a href="/hospitality.html"><img src="/images/banhosp.png" /></a>
 					</div>
 				</li>
-				<li style="width: 100%">
+				<li>
 					<a href="/media.html"><img src="/images/medbg.jpg" /></a>
 					<div class="cpbtm">
 						<a href="/media.html"><img src="/images/banmed.png" /></a>
 					</div>	
 				</li>
-				<li style="width: 100%">
+				<li>
 					<a href="/automotive.html"><img src="/images/autobg.jpg" /></a>
 					<div class="cpbtm">
 						<a href="/automotive.html"><img src="/images/banauto.png" /></a>
 					</div>	
 				</li>
-				<li style="width: 100%">
+				<li>
 					<a href="/business.html"><img src="/images/busbg.jpg" /></a>
 					<div class="cptop">
 						<a href="/business.html"><img src="/images/banbus.png" /></a>
