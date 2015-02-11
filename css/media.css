@@ -70,6 +70,9 @@ and (orientation : portrait) {
 	#left{
 		padding-left: 5%;
 	}
+	.bluenav{
+		height: 100px;
+	}
 	.bluecont{
 		width: 90% !important;
 		text-align: justify;
@@ -386,6 +389,12 @@ and (orientation : portrait) {
 	}
 	.abdesc{
 		width: 100% !important;
+	}
+	#back-to-top{
+		display: none;
+	}
+	.tsslider .bx-wrapper{
+		display: none;
 	}
 }
 
