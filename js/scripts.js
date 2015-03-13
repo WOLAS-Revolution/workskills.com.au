@@ -710,7 +710,11 @@ $(document).ready(function()
 			$('.parallax .bg1').parallax("50%", 0.6);
 			$('.parallax .bg2').parallax("50%", 0.6);
 			$('.parallax .bg3').parallax("50%", 0.6);	
-			$('.parallax .bg4').parallax("50%", 0.6);				
+			$('.parallax .bg4').parallax("50%", 0.6);
+			$('.parallax .bgh').parallax("50%", 0.6);
+			$('.parallax .bgb').parallax("50%", 0.6);
+			$('.parallax .bga').parallax("50%", 0.6);	
+			$('.parallax .bgm').parallax("50%", 0.6);
 		} 
 	}
 
