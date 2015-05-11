@@ -4,6 +4,8 @@ Resets
 --------------------------------------------------------*/
 html, body {
 	visibility: visible !important;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -161,23 +163,26 @@ table {
 /*--------------------------------------------------------
 BLUEBARS
 --------------------------------------------------------*/
-.bluenav{
+.bluenav, .bluenavn{
 	background-color: steelblue;
 	margin-top: 10px !important;
 	width: 100%;
 }
-.bluecont{
+.bluenavn .container{
+	padding-bottom: 0px !important;
+}
+.bluecont, .bluecontn{
 	width: 960px;
 	margin: 0 auto;
 	text-align: center;
 }
-.bluebtn, .bluehome{
+.bluebtn, .bluehome, .bluebtnn, .bluehomen{
 	vertical-align: middle;
 	text-align: center;
 	display: inline-block;
 	width: 14%;
 }
-.bluebtn a, .bluehome a{
+.bluebtn a, .bluehome a, .bluebtnn a, .bluehomen a{
 	color: white;
 	text-decoration: none !important;
 	font-family: "Open Sans", sans-serif;
@@ -186,15 +191,18 @@ BLUEBARS
 	display: block;
 	padding: 10px 0;
 }
-.bluebtn:hover{
+.bluebtn:hover, .bluebtnn:hover{
 	background-color: #91b6d5;
 }
-.bluehome{
+.bluehome, .bluehomen{
 	position: relative;
 	width: 16%;
 	font-weight: 700;
 }
-.bluehome a:hover, .blueia:hover{
+.bluehomen{
+	margin-left: 25px;
+}
+.bluehome a:hover, .blueia:hover, .bluehomen a:hover,{
 	background-color: steelblue !important;
 	color: #132433 !important;
 }
@@ -217,6 +225,28 @@ BLUEBARS
 .bluehome:before{
 	border-color: rgba(255, 255, 255, 0);
 	border-left-color: white;
+	border-width: 25px;
+	margin-top: -25px;
+}
+.bluehomen:after, .bluehomen:before{
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.bluehomen:after{
+	border-color: rgba(111, 159, 200, 0);
+	border-right-color: steelblue;
+	border-width: 20px;
+	margin-top: -20px;
+}
+.bluehomen:before{
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: white;
 	border-width: 25px;
 	margin-top: -25px;
 }
@@ -558,7 +588,6 @@ p.lead {
 	font-size: 16px;
 	line-height: 1.2;
 	padding: 0;
-	margin-bottom: 20px;
 	position: relative;
 	z-index: 1;
 	font-weight: 600;
@@ -673,7 +702,42 @@ p.footnote{
 	font-size: 100%;
 }
 .price{
-	float: right;
+	position: absolute;
+	right: 5px;
+	margin-top: -25px;
+	width: auto !important;
+}
+.contactbox a{
+	color: white !important;
+	border-bottom: 1px dotted white;
+	padding-bottom: 2px;
+}
+.caption{
+	background-color: transparent !important;
+	font-style: italic;
+	border-bottom: 2px dotted #cdcdcd;
+	margin-bottom: 1.5em;
+}
+.caption p{
+	margin-bottom: 5px !important;
+}
+.caption p:before{
+	content: "\2666  ";
+}
+.postinfo{
+	margin-top: 1.5em;
+	background-color: #F0F5F9 !important;
+	border-bottom: 2px dotted #4682B4;
+	padding: 10px !important;
+}
+.postinfo p .lead{
+	margin-bottom: 5px !important;
+}
+.postinfo p:last-child{
+	margin-bottom: 0px !important;
+}
+.imgcap{
+	margin-bottom: 1em;
 }
 
 /*--------------------------------------------------------
@@ -1777,9 +1841,9 @@ p.quote {
 /*======== BLOG PAGE ========*/
 
 	
-.post {
+/*.post {
 	margin-bottom: 100px;
-}
+}*/
 .post-media {
 	margin-bottom: 30px;
 }
@@ -1881,11 +1945,24 @@ p.quote {
 	color: #868991;
 	font-size: 10px;
 }
+.pure-button{
+	color: white;
+	background: steelblue;
+	padding: 0 8px;
+	display: inline-block;
+	border-radius: 16px;
+}
+.post-list-pagination-item{
+	margin: 0 5px;
+}
 .pagination {
 	position: relative;
 	width: 100%;
 	border-top: 1px solid #f0f0f0;
 	border-bottom: 1px solid #f0f0f0;
+	text-align: right;
+	font-family: "Open Sans",sans-serif;
+	font-weight: 600;
 }
 .pages {
 	text-align: center;

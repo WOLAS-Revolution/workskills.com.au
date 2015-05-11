@@ -1,0 +1,11 @@
+---
+baseurl: "http://workskills.com.au/news"
+title: "News :: Work Skills - Nationally Accredited Training"
+theme: "WS" 
+paginate: 10
+paginatePath: "page"
+permalinks:
+  post: "/:year/:month/:title/"
+params:
+  SidebarRecentLimit: 5
+---

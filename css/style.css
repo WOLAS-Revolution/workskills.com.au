@@ -659,6 +659,12 @@ p.footnote{
 	padding-left: 10px !important;
 	font-size: 100%;
 }
+.caption{
+	background-color: #F0F5F9 !important;
+	border-bottom: 2px dotted #4682B4;
+	padding: 5px !important;
+	font-style: italic;
+}
 
 /*--------------------------------------------------------
 /* MENU STYLING

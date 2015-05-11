@@ -20,6 +20,9 @@ MEDIA QUERIES
 	.bthin{
 		width: 7%;
 	}
+	.frontph{
+		padding-top: 35px !important;
+	}
 }
 
 @media only screen 
@@ -55,7 +58,7 @@ and (orientation : portrait) {
 	#nav ul{
 		padding-right: 5% !important;
 	}
-	#nav2{
+	#nav2, .frontph{
 		margin-right: 5% !important;
 	}
 	.col11{
@@ -147,7 +150,14 @@ and (orientation : portrait) {
 	}
 	#nav2{
 		margin-top: 5px !important;
+		clear: none !important;
 		margin-right: 0 !important;
+	}
+	.frontph{
+		clear: both;
+		float: left !important;
+		margin-left: 0 !important;
+		padding-top: 0 !important;
 	}
 	.light{
 		width: 100%;
@@ -398,6 +408,11 @@ and (orientation : portrait) {
 	}
 	.tsslider .bx-wrapper{
 		display: none;
+	}
+	#nav2, .frontph{
+		text-align: center;
+		float: none !important;
+		margin-top: -5px !important;
 	}
 }
 

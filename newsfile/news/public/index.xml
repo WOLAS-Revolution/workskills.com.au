@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News :: Work Skills - Nationally Accredited Training</title>
+    <link>http://workskills.com.au/news/</link>
+    <description>Recent content on News :: Work Skills - Nationally Accredited Training</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 01 Jan 2015 12:00:00 +1000</lastBuildDate>
+    <atom:link href="http://workskills.com.au/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Headline</title>
+      <link>http://workskills.com.au/news/2015/01/headline/</link>
+      <pubDate>Thu, 01 Jan 2015 12:00:00 +1000</pubDate>
+      
+      <guid>http://workskills.com.au/news/2015/01/headline/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;imgcap&#34;&gt;
+    &lt;div style=&#34;width:100%;&#34;&gt;
+        &lt;img src=&#34;http://workskills.com.au/news/news/images/image.png&#34; alt=&#34;Header image&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;caption&#34;&gt;
+        &lt;p&gt;This is a caption for the above picture.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;p id=&#34;subhead&#34; class=&#34;lead&#34;&gt;Write your subhead here.&lt;/p&gt;
+&lt;hr style=&#34;margin-top: 0px !important; margin-bottom: 5px !important;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim euismod diam ac interdum. Vestibulum ut faucibus ipsum. Proin sed sem a magna auctor sagittis vitae vitae mauris. Suspendisse at justo odio. Morbi viverra imperdiet enim, ut bibendum sapien vulputate sed. Sed aliquam ligula ut consequat pretium. Morbi dapibus pharetra magna sed iaculis. Vivamus semper augue sapien, sed volutpat elit sollicitudin rutrum. Donec ac sapien ut libero dapibus vehicula. Pellentesque felis purus, blandit at magna vitae, imperdiet pulvinar sem. Donec vitae sem quis nisi luctus posuere. Aliquam at suscipit dui, eget accumsan nulla. Etiam vitae sapien lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse potenti. Vivamus eu imperdiet risus. Donec nec mi suscipit magna porttitor fringilla. Curabitur a arcu odio. Maecenas dignissim risus eros, in posuere lectus feugiat ut. Ut nec felis lobortis, dapibus nibh ac, sollicitudin augue. Vestibulum a lacus a est bibendum tempor. Cras magna arcu, imperdiet quis mi ac, laoreet porta diam. Nulla eu erat nisl. Fusce molestie, lorem eu fringilla mollis, tellus nibh mollis orci, ut mattis ex tortor vitae lorem. Sed mattis gravida sodales.&lt;/p&gt;
+
+&lt;p&gt;Sed vel venenatis massa. Sed facilisis nunc dolor, sit amet laoreet sem feugiat non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur vestibulum felis sed erat fringilla convallis. Vivamus commodo in leo a pellentesque. Donec rutrum tristique magna, ac commodo neque accumsan id. Vestibulum consequat dictum mi, eget varius odio placerat ac. Quisque ultricies congue massa id feugiat.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
