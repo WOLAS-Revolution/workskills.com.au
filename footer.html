@@ -23,7 +23,7 @@
             <div id="directory">
                 <ul>
                     <li class="dbold">
-                        <a href="http://www.wolas.com.au/">WOLAS Revolution</a>
+                        <a href="http://workskills.com.au/news">Latest News</a>
                     </li>
                     <li class="dbold">
                         <a href="http://www.wolas.workskills.com.au/">WOLAS News</a>
@@ -32,10 +32,10 @@
                         <a href="http://workskills.com.au/aboutus.html">About Us</a>
                     </li>
                     <li class="dbold">
-                        <a href="http://workskills.com.au/contact.html">Contact Us</a>
+                        <a href="http://workskills.com.au/client-info.html">Client Information</a>
                     </li>
                     <li class="dbold">
-                        <a href="http://workskills.com.au/client-info.html">Client Information</a>
+                        <a href="http://workskills.com.au/audit.pdf" target="_blank">Audit Report</a>
                     </li>
                 </ul>
                 <ul>
@@ -89,4 +89,25 @@
             </div>
         </div>
     </div>
+    <div id="external">
+        <div class="container">
+            <a href="http://www.wolas.com.au/"><img src="/images/WOLAStiny.png" /> WOLAS Revolution</a>   &bull;   <a href="http://www.filmskills.com.au/"><img src="/images/FStiny.png" /> Film Skills</a>
+        </div>
+    </div>
 </div>
+<script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+    });
+</script>

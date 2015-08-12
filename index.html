@@ -8,11 +8,13 @@
 	<!-- META DATA -->
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 		<meta charset="UTF-8">
-		<title>Work Skills - Nationally Accredited Training</title>
 		<meta name="description" content="Nationally Accredited Training"/>
 		<meta name="keywords" content="Work Skills, Training, Certificate, Diploma, Automotive Repair, Media, RTA, Hospitality, Business"/>
 		<meta name="author" content="Work Skills"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			document.title = 'Work Skills - Nationally Accredited Training';
+		</script>
 		<script src="/js/smoothscroll.js"></script>
 		<script src="/js/jquery.bxslider.min.js"></script>
 		<link href="/css/jquery.bxslider.css" rel="stylesheet" />
@@ -31,12 +33,6 @@
 	<div class="page-wrap">
 		<div class="slider">
 			<ul class="bxslider">
-				<li style="width: 110%;">
-					<a href="/RPL-qualification.html"><img src="/images/rplbg.jpg" /></a>
-					<div class="cpbtm">
-						<a href="/RPL-qualification.html"><img src="/images/banrpl.png" /></a>
-					</div>	
-				</li>
 				<li style="width: 110%;">
 					<a href="/hospitality.html"><img src="/images/hospbg.jpg" /></a>
 					<div class="cptop">
@@ -63,7 +59,11 @@
 				</li>
 			</ul>
 		</div>
-		<div class="fullwidth grey">  
+		<div class="container" id="fpnewsbox">
+			<p class="lead"><a href="/news">LATEST NEWS</a></p>
+			<div id="news"></div>
+		</div>
+		<div class="fullwidth grey">
 			<div class="container">	
 				<div class="row">      
 					<div class="sixteen columns">               
@@ -101,12 +101,12 @@
 						   <!-- START TEAM THUMBNAIL -->  
 							 <div class="team-thumb img-wrp">
 							 <!-- START MEMBER IMAGE --> 
-								 <a href="http://workskills.com.au/RPL-qualification.html"><img src="./images/indeximages/traderec1.png" alt="team">
+								 <a href="http://workskills.com.au/scope.html"><img src="./images/indeximages/scope.png" alt="team">
 							 <!-- END MEMBER IMAGE --> 
 							 </div><!-- END TEAM THUMBNAIL -->  
 							 <!-- START TEAM DESCRIPTION -->  
 							 <div class="team-desc">
-								 <h4>RPL Today</h4>
+								 <h4>Our scope</h4>
 							 </div>  </a>
 							 <!-- END TEAM DESCRIPTION -->  
 						 </div>
@@ -116,7 +116,7 @@
 						  <!-- START TEAM THUMBNAIL -->  
 							<div class="team-thumb img-wrp ">
 							<!-- START MEMBER IMAGE --> 
-								<a href="http://www.wolas.com.au"><img src="./images/indeximages/WOLASSales.jpg" alt="team">
+								<a target="_blank" href="http://www.wolas.com.au"><img src="./images/indeximages/WOLASSales.jpg" alt="team">
 							<!-- END MEMBER IMAGE -->        
 							</div><!-- END TEAM THUMBNAIL -->  
 							<!-- START TEAM DESCRIPTION -->  
@@ -136,6 +136,7 @@
 	<script>
 			$("head").load("head.html");
 			$("#header").load("header.html");
+			$("#news").load("http://workskills.com.au/news/index.html .newsitem h2:lt(5)");
 			$("#footer").load("footer.html");
 	</script>
 	<script type="text/javascript">
@@ -143,6 +144,24 @@
 				$( "#mobnavc" ).on('slideToggle', "slow", function() {
 				});
 			});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+				  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+					  $('html,body').animate({
+						scrollTop: target.offset().top
+					  }, 1000);
+					  return false;
+					}
+				  }
+				});
+			});
+		});
 	</script>
 </body>
 

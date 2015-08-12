@@ -13,6 +13,11 @@
 		<meta name="keywords" content="Work Skills, Training, Certificate, Diploma, Automotive Repair, Media, RTA, Hospitality, Business"/>
 		<meta name="author" content="Work Skills"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			#mc_embed_signup{clear:left; font:14px 'Open Sans',sans-serif;)
+			.button{background-color: #007fbd;}
+		</style>
 </head>
 
 <body class="onepage" data-spy="scroll" style="visibility: hidden">
@@ -40,7 +45,6 @@
                     </div>
                     <div class="postinfo">
                         <a href="{{ .Permalink }}"><p class="lead">{{ .Date.Format "Mon, Jan 2, 2006" }}</p></a>
-                        <p>Get Work Skills news in your inbox - <a href="#">subscribe</a> to our newsletter</p>
                     </div>
 				</div>
 			</div>
@@ -53,6 +57,18 @@
                         <a href="{{.RelPermalink}}" class="list-group-item" style="margin-bottom: 5px;">{{ .Title }}</a>
                         {{ end }}
                     </div>
+				</div>
+				<hr />
+				<div id="mc_embed_signup" style="padding-left: 10px; padding-top: 10px;">
+					<form action="//workskills.us3.list-manage.com/subscribe/post?u=9cdba5128f20a521b5bd2cfae&amp;id=84d33ce85a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+						<label for="mce-EMAIL"><h6 style="margin-bottom: 5px !important;">Subscribe to our newsletter</h6></label>
+						<input style="width: 100% !important; margin-bottom: -5px !important;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+						<div style="position: absolute; left: -5000px;"><input type="text" name="b_9cdba5128f20a521b5bd2cfae_84d33ce85a" tabindex="-1" value=""></div>
+						<br />
+						<div style="clear: both;"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="width: 100% !important; padding: 0 !important"></div>
+						</div>
+					</form>
 				</div>
 				<hr />
 				<div id="rbuttons"></div>

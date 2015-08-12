@@ -13,7 +13,14 @@
 		<meta name="keywords" content="Work Skills, Training, Certificate, Diploma, Automotive Repair, Media, RTA, Hospitality, Business"/>
 		<meta name="author" content="Work Skills"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-</head>
+		<script>
+			$(document).ready(function(){
+				$( "#sbutton" ).click(function() {
+					$( "#mc_embed_signup" ).fadeToggle( "slow", "linear" );
+				});
+			});
+		</script>
+	</head>
 
 <body style="visibility: hidden">
 	<div id="header"></div>
@@ -22,7 +29,7 @@
 	<!-- START HOME SECTION -->    
 		<!-- START PARALLAX SECTION -->	
 		<div id="parallax1" class="parallax" style="height:200px;">
-			<div class="bg1 parallax-bg"></div><!-- END PARALLAX BACKGROUND -->
+			<div class="bgn parallax-bg"></div><!-- END PARALLAX BACKGROUND -->
 			<div class="overlay"></div><!-- END PATTERN OVERLAY -->
 			<div class="container clearfix">
 				<div class="parallax-content" style="height:200px">
@@ -33,6 +40,20 @@
 		<!-- END PARALLAX SECTION -->	
 	<div class="container">
 		<div class="row">
+			<br />
+			<div id="subscribe">
+				<div id="mc_embed_signup">
+					<form action="//workskills.us3.list-manage.com/subscribe/post?u=9cdba5128f20a521b5bd2cfae&amp;id=84d33ce85a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+							<label for="mce-EMAIL"><h6 style="margin-bottom: 5px !important;">Subscribe to our newsletter</h6></label>
+							<div style="position: absolute; left: -5000px;"><input type="text" name="b_9cdba5128f20a521b5bd2cfae_84d33ce85a" tabindex="-1" value=""></div>
+							<input style="margin-bottom: -5px !important; height: 40px; width: 70%; float: left;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+							<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="margin-left: 5px; padding: 0 5px !important; float: left;">
+						</div>
+					</form>
+				</div>
+			</div>
+			<br />
 			<div class="stream" style="margin-top: 35px !important;">
                 {{ range .Paginator.Pages }}
                     {{ if eq .Type "post"}}
@@ -59,6 +80,12 @@
 			$("head").load("http://workskills.com.au/head.html");
 			$("#header").load("http://workskills.com.au/header.html");
 			$("#footer").load("http://workskills.com.au/footer.html");
+	</script>
+	<script>
+		$( "#subscribe" ).click(function() {
+			$( "#mc_embed_signup" ).slideToggle( "slow", function() {
+			});
+		});
 	</script>
 </body>
 
